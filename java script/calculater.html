@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="number" id="0" step="any"> 
+  <select  id="ope">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="1" step="any">
+  <button onclick="greet()">calculate</button>
+   <br>
+   <input type="number" id="3" readonly="">
+</body>
+<script>
+  function greet(){
+var ope1=document.getElementById('0').value;
+var ope2=document.getElementById('1').value;
+var ope=document.getElementById('ope').value
+if (ope =='+') {
+  var res =parseInt(ope1)+parseInt(ope2);
+  
+}
+if (ope =='-') {
+  var res =parseInt(ope1)-parseInt(ope2);
+  
+}
+if (ope =='*') {
+  var res =parseInt(ope1)*parseInt(ope2);
+  
+}
+if (ope =='/') {
+  var res =parseInt(ope1)/parseInt(ope2);
+  
+}
+
+document.getElementById('3').value=res;
+
+}
+</script>
+<br>
+<br>
+<script>
+  var i;
+ for(i=0;i<=100;i++){
+ if (i%2!=0) {
+  continue;
+  
+ }
+ document.write(i+"</br>");
+ }
+
+</script>
+
+</html>

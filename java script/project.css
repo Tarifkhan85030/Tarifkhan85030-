@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    font-family: arial;
+    border: border-box;
+}
+
+.navbar{
+    height:60px;
+   align-items: center;
+    background-color: black;
+    color:white; 
+      display:flex; 
+     justify-content: space-evenly;
+   
+}
+
+ .nab-logo{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 2px;
+}
+
+.logo{
+    background-image: url(download.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+} 
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+} 
+.add-frist{
+    margin-left: 15px;
+    color: #ccccccc;
+    font-size:0.85irem;
+}
+.add-second{
+    margin-left: 4px;
+    font-size: irem;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nab-search{
+    
+    margin-left: 5px;
+    background-color: rgb(102, 100, 7);
+    width: 450px;
+    height: 19px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nab-search:hover{
+
+    border: 2px solid orange;
+}
+
+.search-selest{
+    width:50px;
+    border-top-left-radius:3px ;
+    border-bottom-left-radius:3px ;
+    border: none;
+}
+.search-input{
+    border:none;
+    width: 100%;
+    font-size: irem ;
+}
+
+.nab-icon{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* box 4 */
+/* span{
+    font-size:0.7em;
+}
+
+.nab-search{
+    font-size: 0.85rem;
+    font-weight: 700px;
+}
+
+/* box5 */
+.nab-card i{
+    font-size: 30px; 
+}
+.nab-card{
+    font-weight: 700;
+    
+}
+
+/* bar 
+.panel{
+    color: beige;
+    display:flex;
+    height: 40px;
+    background-color: rgba(17, 14, 14, 0.884);
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.panel-ops p{
+    display:inline;
+    color: beige;
+    margin-left: 15px;
+    
+}
+
+.panel-ops{
+    width:70%;
+}
+
+.panel-all{
+
+}
+
+.hero-section{
+    height: 400px;
+    background-image: url(GW-Hero-PC_BBAug23_Soft-toys_with-Apay_Lifestyle_2x._CB597740150_.jpg);
+    background-size: cover;
+
+    .hero-sms{
+        height: 40px;
+        background-color: beige;
+    }
+} 

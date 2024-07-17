@@ -1,0 +1,52 @@
+#div{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  
+
+  animation-name: tarif;
+  animation-duration: 0.25s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+ @keyframes tarif {
+  from{background-color:aquamarine}
+  to{background-color:red}
+ }
+ 
+#div2{
+  margin-top: 100px;
+  width: 100px; 
+  height: 100px;
+  background-color: darkgrey;
+  border: 7px solid blue;
+  border-top: 7px black solid; 
+  border-radius: 57px;
+  animation: spin 2s ease-in 0s infinite normal;
+}
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.div{
+  background-color: fuchsia;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  animation: tarif 0.40s ease-in-out 0s infinite normal;
+}
+@keyframes tarif{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

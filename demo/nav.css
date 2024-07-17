@@ -1,0 +1,40 @@
+.clock-border{
+    width: 100%;
+   min-height:100vh;
+    background-color:#be398d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container{
+    height:100px;
+    width: 250px;
+    background-color:#c70039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.clock{
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(30deg,pink,orange,red,aqua);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius:15px;
+    border-bottom-right-radius: 15px;
+}
+ 
+span{
+    font-size: 30px;
+}
+
+.day{
+    margin-left: 20px;
+}

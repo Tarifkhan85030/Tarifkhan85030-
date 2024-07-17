@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall dimensions */
+}
+
+body {
+    text-align: center; /* Moved from global selector for more targeted application */
+   /* font-family: Arial, sans-serif; /* Improves readability */
+}
+
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem; /* Adds some space below the header */
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.choice {
+    margin-top: 2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Smooth transitions for hover effects */
+}
+
+.choice:hover {
+    border: 0.2rem solid black;
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly enlarges the choice on hover */
+}
+
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+#ai-score, #user-score {
+    font-size: 3rem;
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline-block; /* Changed from 'inline' to 'inline-block' for better padding effect */
+}

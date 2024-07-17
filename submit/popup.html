@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="continair">
+       <button class="btn" onclick="open_popup()" id="main-show-detele">Submit</button>
+       <div class="popup" id="popup">
+        <div class="pop"><img src="chack.jpg" alt=""></div>
+
+        <div class="last-msg">
+            <h1>Thank You !</h1>
+            <h2>Thanks for submit deatele</h2>
+            <button class="last-btn" onclick="close_popup()">ok</button>
+        </div>
+       </div>
+    </div>
+
+    <script>
+        let pupop = document.getElementById("popup")
+           function open_popup(){
+            pupop.classList.add("show-popup")
+           }
+
+           
+    function close_popup(){
+        popup.classList.remove("show-popup")
+    }
+           
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="continair">
+        <button class="btn" onclick="openPopup()" id="main-show-detele">Submit</button>
+        <div class="popup" id="popup">
+            <div class="pop"><img src="chack.jpg" alt="Check Image"></div>
+            <div class="last-msg">
+                <h1>Thank You!</h1>
+                <h2>Thanks for submitting details</h2>
+                <button class="last-btn" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            let popup = document.getElementById("popup");
+            popup.style.visibility = 'visible';
+            popup.classList.add("show-popup");
+        }
+
+        function closePopup() {
+            let popup = document.getElementById("popup");
+            popup.classList.remove("show-popup");
+            setTimeout(() => {
+                popup.style.visibility = 'hidden';
+            }, 200);  // Match the duration of the transition
+        }
+    </script>
+</body>
+</html>
